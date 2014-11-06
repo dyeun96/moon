@@ -11,11 +11,12 @@ function setup() {
 
 function draw() {
    background(bg);
-  
+   //태양
    fill(255,64,64);
    noStroke()
     ellipse(250,250,250,250);
-   //태양
+    ellipse = loadImage("sun.png");
+
    var duration = 4000;
    var timing = (new Date()%duration)/duration;
 
