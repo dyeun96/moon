@@ -8,6 +8,7 @@ function setup() {
   bg = loadImage("space.png");
   img = loadImage("earth.png");
   img2 = loadImage("moon.png");
+  img3 = loadImage("neptune.png");
   createCanvas(500, 500);
 }
 
@@ -33,7 +34,7 @@ function draw() {
 
    fill(87,96,255);
    noStroke()
-   ellipse(250 + Math.cos(timing*2*PI)*350,           // x좌표
+   image(img3, 250 + Math.cos(timing*2*PI)*350,           // x좌표
         250 + Math.sin(timing*2*PI)*200,       // y좌표
         150,                                     // width
         150);                                    // height
