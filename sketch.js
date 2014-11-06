@@ -46,7 +46,7 @@ function draw() {
 
    fill(126,22,12);
    noStroke()
-   image(img5.250 + Math.cos(timing*2*PI)*250,           // x좌표
+   image(img5, 250 + Math.cos(timing*2*PI)*250,           // x좌표
         250 + Math.sin(timing*2*PI)*200,       // y좌표
         60,                                     // width
         60);                                    // height
