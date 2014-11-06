@@ -6,17 +6,17 @@ function setup() {
   // into the size() method. In this program, the size of the image
   // is 710x400 pixels.
   bg = loadImage("space.png");
-  image = loadImage("sun.png");
+  img = loadImage("earth.png");
   createCanvas(500, 500);
 }
 
 function draw() {
    background(bg);
-   //태양
+  
    fill(255,64,64);
    noStroke()
     ellipse(250,250,250,250);
-
+   //태양
    var duration = 4000;
    var timing = (new Date()%duration)/duration;
 
@@ -52,7 +52,7 @@ function draw() {
 
    fill(81,158,81);
    noStroke()
-   ellipse(250 + Math.cos(timing*2*PI)*250,           // x좌표
+  image(img, 250 + Math.cos(timing*2*PI)*250,           // x좌표
         250 + Math.sin(timing*2*PI)*200,       // y좌표
         60,                                     // width
         60);                                    // height
