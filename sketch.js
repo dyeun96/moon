@@ -9,6 +9,7 @@ function setup() {
   img = loadImage("earth.png");
   img2 = loadImage("moon.png");
   img3 = loadImage("neptune.png");
+  img4 = loadImage("venus.png");
   createCanvas(500, 500);
 }
 
@@ -18,16 +19,16 @@ function draw() {
    fill(255,64,64);
    noStroke()
     ellipse(250,250,250,250);
-   //태양
+   //노란
    var duration = 4000;
    var timing = (new Date()%duration)/duration;
 
    fill(229,211,136);
    noStroke()
-   ellipse(250 + Math.cos(timing*2*PI)*200,           // x좌표
+   image(img4,250 + Math.cos(timing*2*PI)*200,           // x좌표
         250 + Math.sin(timing*2*PI)*200,       // y좌표
-        60,                                     // width
-        60);                                    // height
+        40,                                     // width
+        40);                                    // height
    //타원궤도 행성
    var duration = 5000;
    var timing = (new Date()%duration)/duration;
