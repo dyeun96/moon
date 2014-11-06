@@ -7,6 +7,7 @@ function setup() {
   // is 710x400 pixels.
   bg = loadImage("space.png");
   img = loadImage("earth.png");
+  img2 = loadImage("moon.png");
   createCanvas(500, 500);
 }
 
@@ -62,7 +63,7 @@ function draw() {
 
    fill(209,192,70);
    noStroke()
-   ellipse(250 + Math.cos(timing*2*PI)*250+Math.cos(timing*4*PI)*80,          // x좌표
+   image(img2,250 + Math.cos(timing*2*PI)*250+Math.cos(timing*4*PI)*80,          // x좌표
         250 + Math.sin(timing*2*PI)*200+Math.sin(timing*4*PI)*80,       // y좌표
         20,                                     // width
         20);                                    // height
