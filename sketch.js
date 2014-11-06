@@ -6,6 +6,7 @@ function setup() {
   // into the size() method. In this program, the size of the image
   // is 710x400 pixels.
   bg = loadImage("space.png");
+  img1 = loadImage("sun.png");
   createCanvas(500, 500);
 }
 
@@ -14,7 +15,7 @@ function draw() {
    //태양
    fill(255,64,64);
    noStroke()
-    ellipse(250,250,250,250);
+   image(img1);
 
    var duration = 4000;
    var timing = (new Date()%duration)/duration;
