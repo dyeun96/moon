@@ -11,6 +11,7 @@ function setup() {
   img3 = loadImage("neptune.png");
   img4 = loadImage("venus.png");
   img5 = loadImage("mars.png");
+  img6 = loadImage("sun.png");
   createCanvas(500, 500);
 }
 
@@ -19,7 +20,7 @@ function draw() {
   
    fill(255,64,64);
    noStroke()
-    ellipse(250,250,250,250);
+   image(img6, 250,250,250,250);
    //노란
    var duration = 4000;
    var timing = (new Date()%duration)/duration;
