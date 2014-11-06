@@ -48,8 +48,8 @@ function draw() {
    noStroke()
    image(img5.250 + Math.cos(timing*2*PI)*250,           // x좌표
         250 + Math.sin(timing*2*PI)*200,       // y좌표
-        30,                                     // width
-        30);                                    // height
+        60,                                     // width
+        60);                                    // height
    //태양를 도는 지구
    var duration = 6000;
    var timing = (new Date()%duration)/duration;
